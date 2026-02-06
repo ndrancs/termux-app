@@ -91,10 +91,10 @@ public class TermuxBootstrap {
     //    return PackageManager.TAPM.equals(TERMUX_APP_PACKAGE_MANAGER);
     //}
 
-    ///** Is {@link PackageManager#PACMAN} set as {@link #TERMUX_APP_PACKAGE_MANAGER}. */
-    //public static boolean isAppPackageManagerPACMAN() {
-    //    return PackageManager.PACMAN.equals(TERMUX_APP_PACKAGE_MANAGER);
-    //}
+    /** Is {@link PackageManager#PACMAN} set as {@link #TERMUX_APP_PACKAGE_MANAGER}. */
+    public static boolean isAppPackageManagerPACMAN() {
+        return PackageManager.PACMAN.equals(TERMUX_APP_PACKAGE_MANAGER);
+    }
 
 
 
@@ -113,10 +113,10 @@ public class TermuxBootstrap {
     //    return PackageVariant.TAPM_ANDROID_7.equals(TERMUX_APP_PACKAGE_VARIANT);
     //}
 
-    ///** Is {@link PackageVariant#PACMAN_ANDROID_7} set as {@link #TERMUX_APP_PACKAGE_VARIANT}. */
-    //public static boolean isAppPackageVariantTPACMANAndroid7() {
-    //    return PackageVariant.PACMAN_ANDROID_7.equals(TERMUX_APP_PACKAGE_VARIANT);
-    //}
+    /** Is {@link PackageVariant#PACMAN_ANDROID_7} set as {@link #TERMUX_APP_PACKAGE_VARIANT}. */
+    public static boolean isAppPackageVariantTPACMANAndroid7() {
+        return PackageVariant.PACMAN_ANDROID_7.equals(TERMUX_APP_PACKAGE_VARIANT);
+    }
 
 
 
@@ -141,7 +141,7 @@ public class TermuxBootstrap {
         // * https://wiki.archlinux.org/title/pacman
         // * https://en.wikipedia.org/wiki/Arch_Linux#Pacman
         // */
-        //PACMAN("pacman");
+        PACMAN("pacman");
 
         private final String name;
 
@@ -185,8 +185,8 @@ public class TermuxBootstrap {
         ///** {@link PackageManager#TAPM} variant for Android 7+. */
         //TAPM_ANDROID_7("tapm-android-7");
 
-        ///** {@link PackageManager#PACMAN} variant for Android 7+. */
-        //PACMAN_ANDROID_7("pacman-android-7");
+        /** {@link PackageManager#PACMAN} variant for Android 7+. */
+        PACMAN_ANDROID_7("pacman-android-7");
 
         private final String name;
 
